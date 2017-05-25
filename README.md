@@ -1,1 +1,1 @@
-Re-implementations of several supervised learning algorithms: KNN, decision trees, random forest, boosting, Naive Bayes. Case study predicting churn for a ridesharing company. Guided by Galvanize's machine learning curriculum
+Implementations of several supervised learning algorithms: KNN, decision trees, random forest, boosting, Naive Bayes. Case study predicting churn for a ridesharing company. Guided by Galvanize's machine learning curriculum
