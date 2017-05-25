@@ -1,1 +1,1 @@
-Implementations of several supervised learning algorithms, excerpted from course materials in Galvanize's data science & machine learning immersive.
+Re-implementations of several supervised learning algorithms: KNN, decision trees, random forest, boosting, Naive Bayes. Case study predicting churn for a ridesharing company. Guided by Galvanize's machine learning curriculum
