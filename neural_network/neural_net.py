@@ -120,7 +120,7 @@ class TwoLayerNet(object):
 
     # compute the gradient on scores
 
-    dscores = probs
+    dscores = probabilities
     dscores[range(N),y]  -= 1
     dscores /= N # subtracting 1 from each correct score, and taking the average. increasing scores increases loss by a little bit, except if the score is of the correct class (so subtract 1 --> it'll get zeroed out?)
 
