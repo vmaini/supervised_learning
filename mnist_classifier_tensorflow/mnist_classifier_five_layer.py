@@ -1,3 +1,4 @@
+# Resource: https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0
 #
 # Copyright 2017 Vishal Maini
 #
@@ -14,6 +15,8 @@
 # limitations under the License.
 
 '''
+PROCESS
+
 - define architecture of NN
 - import training data, train/test split
 - initialize hyperparameters (weights, bias, learning_rate, batch_size, etc.)
