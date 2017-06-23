@@ -13,7 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
 '''
 - define architecture of NN
 - import training data, train/test split
@@ -105,7 +104,6 @@ Y = tf.nn.softmax(Y_logits)
 cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=Y_logits, labels=Y_))*100
 # alt: cross_entropy = -tf.reduce_sum(Y_ * tf.log(Y))
 # numerically unstable bc log(0) = NaN
-
 
 # calculate accuracy
 is_correct = tf.equal(tf.argmax(Y,1),tf.argmax(Y_,1))
