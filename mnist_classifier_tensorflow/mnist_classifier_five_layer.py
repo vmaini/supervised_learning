@@ -24,7 +24,6 @@
 - repeat until convergence
 - visualize performance, tune hyperparameters (test with cross-validation)
 - deploy on test data
-
 '''
 
 import tensorflow as tf
@@ -150,8 +149,8 @@ def training_step(i, update_test_data, update_train_data):
     sess.run(train_step,{X: batch_X, Y_: batch_Y, lr: learning_rate, pkeep:0.75})
 
 # to disable visualization, replace visualization.animate with:
-for i in range(10000+1): training_step(i, i % 100 == 0, i % 20 == 0)
-#visualization.animate(training_step, iterations=10000+1, train_data_update_freq=20, test_data_update_freq=100, more_tests_at_start=True)
+# for i in range(10000+1): training_step(i, i % 100 == 0, i % 20 == 0)
+visualization.animate(training_step, iterations=10000+1, train_data_update_freq=20, test_data_update_freq=100, more_tests_at_start=True)
 
 print "max test accuracy: " + str(visualization.get_max_test_accuracy())
 
